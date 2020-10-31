@@ -1,0 +1,22 @@
+body{
+	background-color: black;
+	color:orange;
+}
+.red{
+	min-height: 100px;
+	padding: 50px;
+	text-align: center;
+	background-color: orange;
+	color:white;
+}
+.clr{
+	min-height: 100px;
+	padding: 50px;
+	text-align: center;
+	
+}
+
+.parallax-window {
+	min-height: 600px;
+	background: transparent;
+}

@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!--  meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+   <!-- plugins -->
+   <link rel="stylesheet" href="assets/WOW-master/css/animate.css">
+
+    <!--CSS links-->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media.css">
+    <link rel="stylesheet" href="assets/coverflow/css/jquery.flipster.min.css">
+    <title>jquery plugins</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <h1 class="text-center text-dark">COUNTER PLUGIN</h1>
+        </div>
+        <div class="col-md-4">
+          <div class="wrapper text-center">
+            <h1 class="counter">1,234,567.00</h1>
+          </div>
+        </div>
+
+         <div class="col-md-4">
+          <div class="wrapper text-center">
+            <h1 class="counter">5,678,250.00</h1>
+          </div>
+        </div>
+
+         <div class="col-md-4">
+          <div class="wrapper text-center">
+            <h1 class="counter">4,345,124.00</h1>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <h1 class="text-center text-dark">WOW JS</h1>
+        </div>
+      </div>
+      <section class="wow slideInLeft" data-wow-duration="5s" data-wow-delay="1s">
+           <div class="red">
+             <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit, corrupti velit, nulla cupiditate veritatis accusantium aperiam? Dignissimos corrupti, laborum iste!</h4>
+           </div>
+         </section>
+
+         <section class="wow fadeOutDown" data-wow-duration="5s" data-wow-delay="1s">
+           <div class="clr">
+             <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit, corrupti velit, nulla cupiditate veritatis accusantium aperiam? Dignissimos corrupti, laborum iste!</h4>
+           </div>
+         </section>
+
+         <section class="wow bounce" data-wow-duration="5s" data-wow-delay="1s">
+           <div class="red">
+             <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit, corrupti velit, nulla cupiditate veritatis accusantium aperiam? Dignissimos corrupti, laborum iste!</h4>
+           </div>
+         </section>
+
+    </div>
+
+    <!-- parallax -->
+    <div class="container">
+      <div class="row">
+          <div class="col-md-12">
+          <h1 class="text-center text-dark">PARALLAX JS</h1>
+        </div>
+        <div class="col-md-12">
+          <div class="parallax-window" data-parallax="scroll" data-image-src="images/1.jpg"></div>
+        </div>
+        <div class="col-md-12">
+          <div class="parallax-window" data-parallax="scroll" data-image-src="images/2.jpg"></div>
+        </div>
+        <div class="col-md-12">
+          <div class="parallax-window" data-parallax="scroll" data-image-src="images/3.jpg"></div>
+        </div>
+      </div>
+    </div>
+    <!-- coverflow plugin -->
+    <div class="container">
+      <div class="row">
+         <div class="col-md-12">
+          <h1 class="text-center text-dark">COVERFLOW JS</h1>
+        </div>
+      </div>
+      <div id="coverflow">
+        <ul class="flip-items">
+          <li data-flip-title="Title 1">
+            <img src="images/text1.gif">
+          </li>
+          <li data-flip-title="Title 2">
+            <img src="images/text2.gif">
+          </li>
+          <li data-flip-title="Title 3">
+            <img src="images/text3.gif">
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <!--JS links --> 
+   <script src="js/jquery.min.js"></script>
+   <!-- plugins -->
+   <script src="assets/counter/waypoints.min.js"></script>
+   <script src="assets/counter/jquery.counterup.min.js"></script>
+   <script src="assets/WOW-master/js/wow.min.js"></script>
+   <script src="assets/parallax/parallax.min.js"></script>
+   <script src="assets/coverflow/js/jquery.flipster.min.js"></script>
+
+    <!-- plugins -->
+   <script src="js/popper.min.js"></script>
+   <script src="js/bootstrap.min.js"></script>
+   <script src="js/script.js"></script>
+   <script>
+     $(document).ready(function(){
+      //counterup
+      $('.counter').counterUp({
+        delay: 10,
+        time: 1000
+        });
+      //wow.js
+      new WOW().init();
+
+      $(function(){
+        var coverflow = $("#coverflow").flipster();
+      });
+
+     });
+   </script>
+  </body>
+</html>
